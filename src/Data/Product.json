@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Rendang Daging Sapi Mandeh",
+    "price": "Rp 85.000",
+    "image": "/src/assets/Rendang.jpg" 
+  },
+  {
+    "id": 2,
+    "name": "Sate Maranggi Purwakarta",
+    "price": "Rp 45.000",
+    "image": "/src/assets/satemaranggi.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Gudeg Komplit Jogja",
+    "price": "Rp 35.000",
+    "image": "/src/assets/gudegkomplit.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ayam Betutu Khas Bali",
+    "price": "Rp 90.000",
+    "image": "/src/assets/ayambetutu.jpg"
+  }
+]
