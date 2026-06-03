@@ -1,5 +1,7 @@
+import { MdFastfood } from "react-icons/md"; 
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import React from "react";
 
 import "./assets/tailwind.css";
 
@@ -9,9 +11,7 @@ import AuthLayout from "./layouts/AuthLayout";
 import Forgot from "./pages/auth/Forgot";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
-
 import Loading from "./components/Loading";
-
 // 1. TAMBAHKAN LAZY IMPORT UNTUK LANDING PAGE GUEST
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 
@@ -20,6 +20,9 @@ const Orders = lazy(() => import("./pages/Orders"));
 const Customers = lazy(() => import("./pages/Customers"));
 const ErrorPage = lazy(() => import("./components/ErrorPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const Products = lazy(()=> import("./pages/Product"))
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
+
 
 function App() {
   return (
@@ -35,6 +38,8 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
         </Route>
 
         {/* ROUTE AUTH LAYOUT */}

@@ -1,14 +1,21 @@
-import { AiOutlineUser, AiOutlineWarning, AiOutlineLock, AiOutlineStop } from "react-icons/ai"; // Tambah ikon error
+import {
+  AiOutlineUser,
+  AiOutlineWarning,
+  AiOutlineLock,
+  AiOutlineStop,
+} from "react-icons/ai"; // Tambah ikon error
 import { BiListUl } from "react-icons/bi";
-import { MdDashboard } from "react-icons/md";
+import { MdDashboard, MdFastfood } from "react-icons/md"; 
 import { Link, NavLink } from "react-router-dom";
+
 
 export default function Sidebar() {
   const menuClass = ({ isActive }) =>
     `flex cursor-pointer items-center rounded-xl p-4 space-x-2
-        ${isActive ? 
-          "text-hijau bg-green-200 font-extrabold" : 
-          "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
+        ${
+          isActive
+            ? "text-hijau bg-green-200 font-extrabold"
+            : "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
         }`;
 
   return (
@@ -53,10 +60,18 @@ export default function Sidebar() {
               Customers
             </NavLink>
           </li>
+          <li>
+            <NavLink id="menu-4" to="/products" className={menuClass}>
+              <MdFastfood className="mr-4 text-xl" />
+              Products
+            </NavLink>
+          </li>
 
           {/* --- MENU TESTING ERROR (Sesuai Tugas) --- */}
           <div className="pt-4 pb-2">
-            <p className="text-xs font-bold text-gray-400 uppercase px-4">Test Error Pages</p>
+            <p className="text-xs font-bold text-gray-400 uppercase px-4">
+              Test Error Pages
+            </p>
           </div>
           <li>
             <NavLink id="menu-400" to="/error-400" className={menuClass}>
