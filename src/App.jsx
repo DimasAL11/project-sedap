@@ -12,6 +12,7 @@ import Forgot from "./pages/auth/Forgot";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import Loading from "./components/Loading";
+import Disyui from "./pages/disyui";
 // 1. TAMBAHKAN LAZY IMPORT UNTUK LANDING PAGE GUEST
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/disyui" element={<Disyui />} />
         </Route>
 
         {/* ROUTE AUTH LAYOUT */}

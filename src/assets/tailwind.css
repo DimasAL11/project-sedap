@@ -1,31 +1,35 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'Barlow';
-    src: url('/public/Fonts/Barlow-Regular.ttf');
+  font-family: "Barlow";
+  src: url("/public/Fonts/Barlow-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('/public/Fonts/Poppins-Regular.ttf');
+  font-family: "Poppins";
+  src: url("/public/Fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Poppins-estrabold';
-    src: url('/public/Fonts/Poppins-ExtraBold.ttf');
+  font-family: "Poppins-estrabold";
+  src: url("/public/Fonts/Poppins-ExtraBold.ttf");
 }
 
 @theme {
-    --font-barlow: "Barlow", sans-serif;
-    --font-poppins: "Poppins", sans-serif;
-    --font-poppins-estrabold: "Poppins-EstraBold", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-poppins-estrabold: "Poppins-EstraBold", sans-serif;
 
-    --color-latar: #f3f4f6;
-    --color-teks: #374151; 
-    --color-teks-samping: #6b7280;
-    --color-garis: #e5e7eb; 
-    --color-hijau: #00B074; 
-    --color-merah: #ef4444; 
-    --color-biru: #3b82f6;
-    --color-kuning: #f59e0b; 
+  --color-latar: #f3f4f6;
+  --color-teks: #374151;
+  --color-teks-samping: #6b7280;
+  --color-garis: #e5e7eb;
+  --color-hijau: #00b074;
+  --color-merah: #ef4444;
+  --color-biru: #3b82f6;
+  --color-kuning: #f59e0b;
+}
+
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark, cupcake, sunset;
 }

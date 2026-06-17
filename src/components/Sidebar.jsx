@@ -1,3 +1,4 @@
+import { SiDaisyui } from "react-icons/si"; 
 import {
   AiOutlineUser,
   AiOutlineWarning,
@@ -5,9 +6,8 @@ import {
   AiOutlineStop,
 } from "react-icons/ai"; // Tambah ikon error
 import { BiListUl } from "react-icons/bi";
-import { MdDashboard, MdFastfood } from "react-icons/md"; 
+import { MdDashboard, MdFastfood } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
-
 
 export default function Sidebar() {
   const menuClass = ({ isActive }) =>
@@ -64,6 +64,12 @@ export default function Sidebar() {
             <NavLink id="menu-4" to="/products" className={menuClass}>
               <MdFastfood className="mr-4 text-xl" />
               Products
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-4" to="/disyui" className={menuClass}>
+              <SiDaisyui  className="mr-4 text-xl" />
+              Disyui
             </NavLink>
           </li>
 
